@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply Bus Pass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg,#2c3e50,#3498db);
+            color:#fff;
+        }
+        header{
+            padding:20px;
+            text-align:center;
+            background: rgba(0,0,0,0.25);
+        }
+        .container{
+            max-width:700px;
+            margin:30px auto;
+            padding:0 20px;
+        }
+        .card{
+            background:#fff;
+            color:#333;
+            padding:30px;
+            border-radius:12px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.3);
+        }
+        h2{
+            margin-top:0;
+            text-align:center;
+        }
+        label{
+            font-weight:bold;
+            display:block;
+            margin-top:12px;
+        }
+        input, select{
+            width:100%;
+            padding:10px;
+            margin-top:6px;
+            border-radius:6px;
+            border:1px solid #ccc;
+        }
+        .btn{
+            margin-top:20px;
+            padding:12px 20px;
+            border:none;
+            border-radius:8px;
+            background:#3498db;
+            color:#fff;
+            cursor:pointer;
+            width:100%;
+        }
+        .btn:hover{
+            background:#2980b9;
+        }
+        .back{
+            text-align:center;
+            margin-top:15px;
+        }
+        .back a{
+            color:#3498db;
+            text-decoration:none;
+        }
+        footer{
+            text-align:center;
+            padding:15px;
+            opacity:.85;
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Apply New Bus Pass</h1>
+    <p>Bus Pass Management System</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Bus Pass Application Form</h2>
+
+        <!-- 🔥 BACKEND READY (change action later if needed) -->
+        <form action="#" method="post">
+
+            <label>Applicant Type</label>
+            <select name="userType" required>
+                <option value="">-- Select --</option>
+                <option value="Student">Student</option>
+                <option value="Employee">Employee</option>
+                <option value="General">General</option>
+            </select>
+
+            <label>Route Name</label>
+            <input type="text" name="route" placeholder="Enter Route Name" required>
+
+            <label>Pass Start Date</label>
+            <input type="date" name="startDate" required>
+
+            <label>Pass Duration</label>
+            <select name="duration" required>
+                <option value="">-- Select Duration --</option>
+                <option value="1 Month">1 Month</option>
+                <option value="3 Months">3 Months</option>
+                <option value="6 Months">6 Months</option>
+            </select>
+
+            <label>Upload ID Proof</label>
+            <input type="file" name="document" required>
+
+            <button type="submit" class="btn">Submit Application</button>
+
+        </form>
+
+        <div class="back">
+            <p><a href="dashboard.html">← Back to Dashboard</a></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 Bus Pass Management System
+</footer>
+
+</body>
+</html>
